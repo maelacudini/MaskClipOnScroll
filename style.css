@@ -37,6 +37,14 @@ p, a, button, span {
     mask-size: 80%;
 }
 
+.credits {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    color: white;
+}
+
 .mask_image {
     height: 100%;
     width: 100%;
@@ -72,9 +80,9 @@ p, a, button, span {
 .lazy_image {
     opacity: 0;
     width: 100%;
-    height: calc(100% + 10rem);
+    height: calc(100% + 16rem);
     object-fit: cover;
     object-position: center;
-    margin-top: -10rem;
+    margin-top: -16rem;
     transition: all 0.3s;
 }
