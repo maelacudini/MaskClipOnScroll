@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: "Poppins", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+p, a, button, span {
+    font-weight: 400;
+}
+
+.mask_container {
+    position: relative;
+    height: 300lvh;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20lvh;
+}
+
+.mask {
+    display: flex;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100lvh;
+    align-items: center;
+    justify-content: center;
+    mask-image: url('/media/asterisk.svg');
+    mask-position: 50% center;
+    mask-repeat: no-repeat;
+    mask-size: 80%;
+}
+
+.mask_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.lazy_images_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.lazy_intro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.lazy_image_container {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16/9;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.lazy_image {
+    opacity: 0;
+    width: 100%;
+    height: calc(100% + 10rem);
+    object-fit: cover;
+    object-position: center;
+    margin-top: -10rem;
+    transition: all 0.3s;
+}

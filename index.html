@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Clip On Scroll</title>
+    <meta name="description" content="Developed with ❤️ by @maelacudini">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="mask_container" id="mask_container">
+        <div class="mask" id="mask">
+            <img 
+                src="https://images.unsplash.com/photo-1738683987582-b52d371d2782?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Background image"
+                class="mask_image"
+                loading="eager"
+                id="mask_image"
+            >
+        </div>
+    </section>
+
+    <section class="lazy_images_container">
+        <div class="lazy_intro">
+            <h1>Intersection Observer 🤝 Image Parallax</h1>
+            <p>Lazy load images with the help of Intersection Observer and add a ✨fancy✨ parallax effect.</p>    
+        </div>
+        <div class="lazy_image_container">
+            <img
+                data-src="https://images.unsplash.com/photo-1635205412911-394b98e06047?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Lazy loaded image"
+                class="lazy_image"
+                loading="lazy"
+            >
+        </div>
+        <div class="lazy_image_container">
+            <img
+                data-src="https://images.unsplash.com/photo-1711539924968-81d3382a85d9?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Lazy loaded image"
+                class="lazy_image"
+                loading="lazy"
+            >
+        </div>
+        <div class="lazy_image_container">
+            <img
+                data-src="https://images.unsplash.com/photo-1711539924921-0a0b09d906b8?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Lazy loaded image"
+                class="lazy_image"
+                loading="lazy"
+            >
+        </div>
+        <div class="lazy_image_container">
+            <img
+                data-src="https://images.unsplash.com/photo-1572491671626-ca1747c3cc57?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Lazy loaded image"
+                class="lazy_image"
+                loading="lazy"
+            >
+        </div>
+        <div class="lazy_image_container">
+            <img
+                data-src="https://images.unsplash.com/photo-1701888281398-5c5fff1748bd?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Lazy loaded image"
+                class="lazy_image"
+                loading="lazy"
+            >
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
